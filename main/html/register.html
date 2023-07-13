@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Register</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/main/styles/styles.css" />
+	</head>
+	<body>
+		<div class="login">
+			<h1>Registration</h1>
+			<form
+				method="get"
+				class="form"
+				name="
+			registration"
+			>
+				<div class="form__name form__block">
+					<input
+						class="form__input"
+						id="regUsername"
+						type="text"
+						name="username"
+						placeholder="User name"
+						required="required"
+						autocomplete="off"
+					/>
+					<span class="form__error">Не верное имя</span>
+				</div>
+				<div class="form__password form__block">
+					<input
+						class="form__input"
+						id="regPassword"
+						type="password"
+						name="password"
+						placeholder="Password"
+						required="required"
+						autocomplete="off"
+					/>
+					<span class="form__error">Не верный пароль</span>
+				</div>
+				<div class="form__second-password form__block">
+					<input
+						class="form__input"
+						id="regRepeatPassword"
+						type="password"
+						name="password"
+						placeholder="Repeat password"
+						required="required"
+						autocomplete="off"
+					/>
+					<span class="form__error" id="regRepPasswordError"
+						>Пароли не совпадают</span
+					>
+				</div>
+
+				<button type="submit" class="btn" id="registerBtn">
+					Register
+				</button>
+				<span class="form__error">Не верное имя или пароль</span>
+			</form>
+			<div class="code">
+				<input class="code__input" type="text" id="input" />
+			</div>
+			<div class="bottom__link">
+				<button class="popup" href="#">Forgot your password?</button>
+				<a class="login__link" href="/main/html/login.html">Login</a>
+			</div>
+		</div>
+		<script type="module" src="/main/script/register.js"></script>
+	</body>
+</html>

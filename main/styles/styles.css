@@ -1,0 +1,6 @@
+@import '/main/styles/global.css';
+@import '/main/styles/color.css';
+
+/* ===== */
+@import '/main/styles/login.css';
+@import '/main/styles/register.css';

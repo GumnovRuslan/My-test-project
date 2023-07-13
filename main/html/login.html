@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/main/styles/styles.css" />
+	</head>
+	<body>
+		<div class="login">
+			<h1>Login</h1>
+			<form
+				method="get"
+				class="form"
+				name="
+			authorization"
+			>
+				<div class="form__name form__block">
+					<input
+						class="form__input"
+						id="username"
+						type="text"
+						name="username"
+						placeholder="Username"
+						required="required"
+						autocomplete="off"
+					/>
+					<span class="form__error">Не верный логин</span>
+				</div>
+				<div class="form__password form__block">
+					<input
+						class="form__input"
+						id="password"
+						type="password"
+						name="password"
+						placeholder="Password"
+						required="required"
+						autocomplete="off"
+					/>
+					<span class="form__error">Не вернй пароль</span>
+				</div>
+
+				<button type="submit" class="btn" id="submitLogin">
+					Entry
+				</button>
+				<p class="form__error">Не верный логин или пароль</p>
+			</form>
+			<div class="bottom__link">
+				<a class="forgot-password__link" href="#"
+					>Forgot your password?</a
+				>
+				<a class="regictration__link" href="/main/html/register.html"
+					>Registration</a
+				>
+			</div>
+		</div>
+		<script type="module" src="/main/script/login.js"></script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+.forgot-password__link {
+	/* display: none; */
+}
+.popup {
+	border: none;
+	background: inherit;
+	color: var(--text);
+	cursor: pointer;
+}
+.popup:hover {
+	color: rgba(34, 121, 195, 1);
+}
+.code {
+	display: none;
+}
+.code__input {
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	background: #00000052;
+	font-size: 16px;
+	color: var(--text);
+}

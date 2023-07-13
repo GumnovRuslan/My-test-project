@@ -22,7 +22,7 @@ let formError = error[error.length - 1]
 
 username.addEventListener('blur', validName)
 password.addEventListener('blur', validPassword)
-passwordSecond.addEventListener('blur', validSecondPassword)
+passwordSecond.addEventListener('input', validSecondPassword)
 btnRegister.addEventListener('submit', register)
 btnRegister.addEventListener('click', register)
 codeInput.addEventListener('input', checkCode)
@@ -61,12 +61,16 @@ function validPassword() {
 }
 
 function validSecondPassword() {
-	if (passwordSecond.value !== password.value) {
-		passwordSecondError.style.display = 'block'
-		return false
+	if (passwordSecond.value.length > 0) {
+		if (passwordSecond.value !== password.value) {
+			passwordSecondError.style.display = 'block'
+			return false
+		} else {
+			passwordSecondError.style.display = 'none'
+			return true
+		}
 	} else {
 		passwordSecondError.style.display = 'none'
-		return true
 	}
 }
 
